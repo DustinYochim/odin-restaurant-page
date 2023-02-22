@@ -1,3 +1,124 @@
+@font-face {
+  font-family: "SpongeBob Font Condensed";
+  src: url("./spongebob-font/SpongebobFontCondensedRegular-3zZEy.otf");
+  font-weight: 500;
+  font-style: none;
+}
+
+@font-face {
+  font-family: "SpongeBob Font Wide";
+  src: url("./spongebob-font/SpongebobFontWideRegular-x3nzV.otf");
+  font-weight: 500;
+  font-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(112, 251, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(112, 251, 211, 1) 28%,
+    rgba(48, 171, 240, 1) 86%,
+    rgba(25, 126, 250, 1) 97%
+  );
+  font-family: "SpongeBob Font Condensed";
+}
+
+.content {
+  min-height: 100%;
+
+  line-height: 1.3;
+  font-size: 1.1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  /* background-color: rgb(0, 0, 0, 0.9); */
+  overflow: hidden;
+  /* box-shadow: 1px 1px 20px black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.top-nav a {
+  /* float: left; */
+  color: rgb(168, 32, 40);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4rem;
+  border: none;
+}
+
+.top-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.top-nav a.active {
+  color: black;
+}
+
 .page-title {
-  color: red;
+  font-family: "SpongeBob Font Wide";
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(168, 32, 40);
+  margin-top: 25px;
+  margin-bottom: 2rem;
+  text-shadow: #fc0 1px 0 10px;
+}
+
+.section-title {
+  font-family: "SpongeBob Font Wide";
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(168, 32, 40);
+  text-shadow: #fc0 1px 0 10px;
+  padding-top: 5rem;
+}
+
+.bg {
+  width: 100vw;
+  box-shadow: 0px 0px 10px black;
+  background-attachment: fixed;
+  border-radius: 3px;
+}
+
+.headline {
+  color: rgb(48, 50, 28);
+  padding: 10px 100px 10px 100px;
+}
+
+.hours-list {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.hours-list > * {
+  padding: 0.25rem;
+}
+
+.location {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+a.footer {
+  text-align: center;
 }
