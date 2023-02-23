@@ -1,5 +1,7 @@
-import pageLoad from "./home";
+import loadHome from "./home";
+import loadMenu from "./menu";
 import "./reset.css";
 import "./style.css";
 
-pageLoad();
+// loadHome();
+loadMenu();

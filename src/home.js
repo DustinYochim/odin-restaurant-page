@@ -1,6 +1,6 @@
-import Background from "./krusty.jpg";
+import Background from "./img/krusty.jpg";
 
-export default function pageLoad() {
+export default function loadHome() {
   const content = document.querySelector("#content");
 
   const topNav = document.createElement("div");

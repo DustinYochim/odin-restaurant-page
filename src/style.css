@@ -85,10 +85,11 @@ body {
 }
 
 .bg {
-  width: 100vw;
-  box-shadow: 0px 0px 10px black;
+  max-width: 80vw;
+  box-shadow: 1px 5px 10px black;
   background-attachment: fixed;
   border-radius: 3px;
+  align-self: center;
 }
 
 .headline {
@@ -117,8 +118,30 @@ body {
   padding-top: 1rem;
   text-decoration: none;
   color: black;
+  margin-top: auto;
 }
 
 a.footer {
   text-align: center;
+}
+
+.menu {
+  border: 1px solid black;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 1rem;
+  align-self: center;
+
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+
+  background-color: rgb(229, 219, 172);
+}
+
+.menu-list {
+  padding-top: 1rem;
+}
+
+.menu-list > * {
+  padding-top: 5px;
 }
