@@ -3,5 +3,13 @@
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["Krab", "Krabby", "Krusty", "spongebob"]
+  "cSpell.words": [
+    "Krab",
+    "Krabby",
+    "krabs",
+    "Krusty",
+    "spongebob",
+    "Squarepants",
+    "Squidward"
+  ]
 }

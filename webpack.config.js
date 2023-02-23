@@ -1,11 +1,16 @@
 const path = require("path");
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
     publicPath: "",
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
   },
   module: {
     rules: [

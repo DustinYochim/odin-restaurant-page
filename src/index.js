@@ -1,16 +1,36 @@
-import loadHome from "./home";
-import loadMenu from "./menu";
-import loadContact from "./contact";
+import renderNav from "./navbar";
+import renderFooter from "./footer";
+import renderHome from "./home";
+import renderMenu from "./menu";
+import renderContact from "./contact";
 import "./reset.css";
 import "./style.css";
 
-loadHome();
+function cacheDOM() {
+  const content = document.querySelector("#content");
+  content.innerHTML = "";
+}
 
-const home = document.querySelector('[href="#home"]');
-home.addEventListener("click", loadHome());
+cacheDOM();
+renderNav();
+renderHome();
+renderFooter();
 
-const menu = document.querySelector('[href="#menu"]');
-menu.addEventListener("click", loadMenu());
+const home = document.querySelector("#home");
+const menu = document.querySelector("#menu");
+const contact = document.querySelector("#contact");
 
-const contact = document.querySelector('[href="#contact"]');
-contact.addEventListener("click", loadContact());
+home.addEventListener("click", () => {
+  cacheDOM();
+  renderHome();
+});
+
+menu.addEventListener("click", () => {
+  cacheDOM();
+  renderMenu();
+});
+
+contact.addEventListener("click", () => {
+  cacheDOM();
+  renderContact();
+});

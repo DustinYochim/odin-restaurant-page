@@ -2,26 +2,6 @@ import Background from "./img/krusty.jpg";
 
 export default function loadHome() {
   const content = document.querySelector("#content");
-
-  const topNav = document.createElement("div");
-  topNav.classList.add("top-nav");
-  const home = document.createElement("a");
-  home.classList.add("active");
-  home.href = "#home";
-  home.textContent = "home";
-  topNav.appendChild(home);
-
-  const menu = document.createElement("a");
-  menu.href = "#menu";
-  menu.textContent = "menu";
-  topNav.appendChild(menu);
-
-  const contact = document.createElement("a");
-  contact.href = "#contact";
-  contact.textContent = "contact";
-  topNav.appendChild(contact);
-
-  content.appendChild(topNav);
   // add image
   const myBackground = new Image();
   myBackground.src = Background;
@@ -90,11 +70,5 @@ export default function loadHome() {
   location.classList.add("location");
   content.appendChild(location);
 
-  // Add Footer
-  const footer = document.createElement("a");
-  footer.classList.add("footer");
-  footer.href = "https://github.com/DustinYochim";
-  footer.textContent = "Copyright © 2023 Dustin Yochim";
-
-  content.appendChild(footer);
+  document.body.appendChild(content);
 }
