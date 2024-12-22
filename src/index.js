@@ -1,5 +1,5 @@
 import renderNav from "./navbar";
-import renderFooter from "./footer";
+// import renderFooter from "./footer";
 import renderHome from "./home";
 import renderMenu from "./menu";
 import renderContact from "./contact";
@@ -14,7 +14,7 @@ function cacheDOM() {
 cacheDOM();
 renderNav();
 renderHome();
-renderFooter();
+// renderFooter();
 
 const home = document.querySelector("#home");
 const menu = document.querySelector("#menu");
