@@ -124,10 +124,10 @@ body {
   padding-top: 1rem;
   text-decoration: none;
   color: black;
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   height: 30px;
 }
 

@@ -14,7 +14,7 @@ function cacheDOM() {
 cacheDOM();
 renderNav();
 renderHome();
-// renderFooter();
+renderFooter();
 
 const home = document.querySelector("#home");
 const menu = document.querySelector("#menu");
